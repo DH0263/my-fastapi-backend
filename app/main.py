@@ -13,10 +13,8 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000", 
-        "http://127.0.0.1:3000",
         "https://ditton.netlify.app"
-    ],  # Netlify 주소 추가
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
